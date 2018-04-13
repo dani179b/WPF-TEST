@@ -1,14 +1,13 @@
 ﻿using System.Windows;
-using System.Windows.Media;
 
 namespace WPF_TEST
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for NoteMenu.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class NoteMenu : Window
     {
-        public MainWindow()
+        public NoteMenu()
         {
             InitializeComponent();
         }
@@ -20,10 +19,7 @@ namespace WPF_TEST
             {
                 DefaultExt = ".png",
                 Filter =
-                    "Image files (*.png;*.jpeg;*.jpg;*.gif)|*.png;*.jpeg;*.jpg;*.gif|" +
-                    "PNG Files (*.png)|*.png|JPEG Files (*.jpeg)|*.jpeg|" +
-                    "JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif|" +
-                    "All files (*.*)|*.*"
+                    "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif"
             };
 
             // Display OpenFileDialog by calling ShowDialog method 
@@ -32,8 +28,9 @@ namespace WPF_TEST
 
             // Get the selected file name and display in a TextBox 
             if (result != true) return;
-            // Open document
-            ImageBox.Source = new ImageSourceConverter().ConvertFromString(dlg.FileName) as ImageSource;
+            // Open document 
+            string filename = dlg.FileName;
+            ImageBox.Text = filename;
         }
     }
 }

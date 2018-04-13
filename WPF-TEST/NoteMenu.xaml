@@ -1,21 +1,20 @@
-﻿<Window x:Class="WPF_TEST.MainWindow"
+﻿<Window x:Class="WPF_TEST.NoteMenu"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800">
+        Title="NoteMenu" Height="600
+        " Width="800">
     <Grid>
         <Border Name="ParagrafArea" Height="100" Width="800" Margin="0,0,0,0" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Border Name="NoteArea" Height="350" Width="600" Margin="0,100,0,0" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" >
-            <TextBlock Name="NoteBox" Height="350" Width="600" TextWrapping="Wrap" Text=""/>
-        </Border>
+        <Border Name="NoteArea" Height="350" Width="600" Margin="0,100,0,0" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <Border Name="JudgeArea" Height="350" Width="200" Margin="600,100,0,0" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <Border Name="ImageArea" Height="120" Width="600" Margin="0,450,0,0" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" >
-            <Button Height="120" Width="600" Margin="0,450,0,0" Background="White" Click="ButtonImage_OnClick">
-                <Image Name="ImageBox" Height="120" Width="600" Margin="0,450,0,0"/>
+            <Button Height="120" Width="600" Background="White" Click="ButtonImage_OnClick">
+                <TextBox Name="ImageBox" Height="120" Width="600" TextWrapping="Wrap" Text=""/>
             </Button>
         </Border>
-        <Border Name="ReferenceArea" Height="121" Width="200" Margin="600,450,0,0" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Border Name="ReferenceArea" Height="120" Width="200" Margin="600,450,0,0" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" />
     </Grid>
 </Window>
