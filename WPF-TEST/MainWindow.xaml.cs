@@ -6,7 +6,7 @@ namespace WPF_TEST
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
         public MainWindow()
         {
@@ -21,8 +21,10 @@ namespace WPF_TEST
                 DefaultExt = ".png",
                 Filter =
                     "Image files (*.png;*.jpeg;*.jpg;*.gif)|*.png;*.jpeg;*.jpg;*.gif|" +
-                    "PNG Files (*.png)|*.png|JPEG Files (*.jpeg)|*.jpeg|" +
-                    "JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif|" +
+                    "PNG Files (*.png)|*.png|" +
+                    "JPEG Files (*.jpeg)|*.jpeg|" +
+                    "JPG Files (*.jpg)|*.jpg|" +
+                    "GIF Files (*.gif)|*.gif|" +
                     "All files (*.*)|*.*"
             };
 
